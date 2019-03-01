@@ -22,7 +22,8 @@
     <web-item key="my_links_link" name="Link on My Links Main Section" section="system.top.navigation.bar" weight="47">
         <label>My Company</label>
         <link linkId="my_links_link">http://www.atlassian.com</link>
-        <condition class="com.atlassian.jira.plugin.webfragment.conditions.UserLoggedInCondition" />
+        <!-- <condition class="com.atlassian.jira.plugin.webfragment.conditions.UserLoggedInCondition" /> -->
+        <condition class="com.atlassian.jira.plugin.webfragment.conditions.UserIsAdminCondition" />
     </web-item>
     <web-item key="website_link" name="Company Web Site" section="my_links_link/my_links_section" weight="10">
         <label>Web Site</label>
